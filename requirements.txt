@@ -1,0 +1,14 @@
+# netcheck 运行依赖
+# 安装（国内推荐阿里云镜像，速度快）：
+#   pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+
+# ---- 图形界面（二选一，代码会自动回退）----
+PySide6-Essentials>=6.6,<6.10   # Win10 / Win11 推荐
+# PyQt5==5.15.9                 # Win7 / Win8 老系统用这个（可选，无需注释掉，装了就会优先用 PySide6）
+
+# ---- 功能依赖 ----
+dnspython>=2.4       # DNS 查询
+psutil>=5.9          # 网卡检测 / 自动识别本机网段
+
+# ---- 打包（可选）----
+# pyinstaller>=6.0   # Win10/11 打包；Win7/8 请用 pyinstaller==5.13.2
