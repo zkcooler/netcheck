@@ -1,0 +1,19 @@
+# 统一换行符，避免 Windows / Linux / macOS 协作时出现「整文件被改动」
+* text=auto eol=lf
+
+# 二进制文件不做换行转换
+*.png binary
+*.ico binary
+*.jpg binary
+*.gif binary
+*.zip binary
+*.exe binary
+
+# 文本文件按 LF 存储
+*.py   text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.json text eol=lf
+
+# 让 GitHub 正确识别语言
+*.py linguist-language=Python
